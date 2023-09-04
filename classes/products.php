@@ -1,34 +1,25 @@
 <?php
 
 class Products{
-    public $cibo;
-    public $giochi;
-    public $cucce;
-    public $accessori;
+    public $nome;
+    public $descrizione;
+    public $immagine;
+    public $categoria;
 
     public function __construct(
-        $cibo,
-        $giochi,
-        $cucce,
-        $accessori,
+        $nome,
+        $descrizione,
+        $immagine,
+        $categoria,
     )
     {
-        $this->cibo = $cibo;
-        $this->giochi = $giochi;
-        $this->cucce = $cucce;
-        $this->accessori = $accessori;
-    }
-    public function toString()
-    {
-        return  'Prodotti' . $this->cibo . $this->giochi . $this->cucce .'e molto altro!';
+        $this->nome = $nome;
+        $this->descrizione = $descrizione;
+        $this->immagine = $immagine;
+        $this->categoria = $categoria;
     }
 }
 
-$products = new Products(
-    'HappyDog',
-    'Corda',
-    'Schiuma',
-    'corda',
-);
 
-var_dump($products);
+
+
