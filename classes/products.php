@@ -18,6 +18,7 @@ class Products{
         $this->immagine = $immagine;
         $this->categoria = $categoria;
     }
+    
 }
 
 

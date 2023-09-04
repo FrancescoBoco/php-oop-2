@@ -5,9 +5,9 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 require_once __DIR__ .'/classes/products.php';
-require_once __DIR__ .'/classes/dogs.php';
-require_once __DIR__ .'/classes/cats.php';
-//require_once __DIR__ .'/classes/byProoductsDogs.php';
+require_once __DIR__ .'/classes/rope.php';
+require_once __DIR__ .'/classes/dogfood.php';
+require_once __DIR__ .'/classes/bagsfordog.php';
 //require_once __DIR__ .'/classes/by-products-cats.php';
 
 
@@ -28,6 +28,18 @@ $dogfood = new DogFood(
     'Cane',
     'Proteine grezze 29%, grassi grezzi 14%, fibre grezze 3%, ceneri grezze 7%, calcio 1.25%, fosforo 0.85%, sodio 0.25%, potassio 0.45%',
     '>20kg'
+);
+
+
+$bagsfordog = new BagsForDogs(
+    "Pedigree",
+    'Gli alimenti umidi di Pedigree® sono disponibili in vaschette e lattine. I nostri alimenti umidi contengono circa quattro volte meno calorie per grammo rispetto alla media del secco, aiutando a mantenere un corretto peso corporeo per il tuo cane. Essi contengono più umidità rispetto al secco, aiutando così la salute del tratto urinario.',
+    'https://m.media-amazon.com/images/I/81u0jcx-7uL.jpg',
+    'Cane',
+    'Lattina Patè Protein + con Tacchino e Pollo',
+    '>20kg',
+    '400g',
+    'Tacchino e Pollo'
 );
 
 //var_dump($rope->$name);
@@ -111,6 +123,47 @@ $dogfood = new DogFood(
                 <h5>
                     Materiale:<?php echo $dogfood->weight ?>
                 </h5>
+            
+            </div>
+
+            <div id="third-card">
+            
+                <div>
+                    <h1>
+                        
+                        <?php echo $bagsfordog->nome  ?>
+                        
+                    </h1>
+                </div>
+                
+                <div>
+                    
+                    <p >
+                        Descrizione: <?php echo $bagsfordog->descrizione ?> 
+                    </p>
+                    
+                </div>
+                <!-- immagine --> 
+                <?php echo $bagsfordog->toImg() ?> 
+
+                <h2>
+                    Questo prodotte è ideato per il <?php echo $bagsfordog->categoria ?>
+                </h2>
+                
+                <h5>
+                    Lunghezza: <?php echo $bagsfordog->ingredients ?>
+                </h5>
+                
+                <h5>
+                    Materiale:<?php echo $bagsfordog->weight ?>
+                </h5>
+                <h4>
+                    la quantità di prodotto all'interno è di : <?php echo $bagsfordog->size ?>
+                </h4>
+                
+                <h4>
+                    Il prodotto è composto principalmetne da  <?php echo $bagsfordog->origin ?>
+                </h4>
             
             </div>
         </main>
