@@ -20,6 +20,16 @@ $rope = new Rope(
     'Guinzaglio di nylon e gancio di metallo'
 );
 
+
+$dogfood = new DogFood(
+    "HappyDog",
+    'Alimento completo ricco di vitamine',
+    'https://dazeroaquattrozampe.com/44-medium_default/happy-dog-adult-supreme-sensible-toscana.jpg',
+    'Cane',
+    'Proteine grezze 29%, grassi grezzi 14%, fibre grezze 3%, ceneri grezze 7%, calcio 1.25%, fosforo 0.85%, sodio 0.25%, potassio 0.45%',
+    '>20kg'
+);
+
 //var_dump($rope->$name);
 
 
@@ -65,6 +75,41 @@ $rope = new Rope(
                 
                 <h5>
                     Materiale:<?php echo $rope->materiale ?>
+                </h5>
+            
+            </div>
+
+
+            <div id="second-card">
+            
+                <div>
+                    <h1>
+                        
+                        <?php echo $dogfood->nome  ?>
+                        
+                    </h1>
+                </div>
+                
+                <div>
+                    
+                    <p >
+                        Descrizione: <?php echo $dogfood->descrizione ?> 
+                    </p>
+                    
+                </div>
+                <!-- immagine --> 
+                <?php echo $dogfood->toImg() ?> 
+
+                <h2>
+                    Questo prodotte è ideato per il <?php echo $dogfood->categoria ?>
+                </h2>
+                
+                <h5>
+                    Lunghezza: <?php echo $dogfood->ingredients ?>
+                </h5>
+                
+                <h5>
+                    Materiale:<?php echo $dogfood->weight ?>
                 </h5>
             
             </div>
