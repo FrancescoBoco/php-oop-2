@@ -1,9 +1,12 @@
 <?php
-require_once __DIR__ .'/classes/products.php'
-require_once __DIR__ .'/classes/dogs.php'
-require_once __DIR__ .'/classes/cats.php'
-require_once __DIR__ .'/classes/byProoductsDogs.php'
-require_once __DIR__ .'/classes/by-products-cats.php'
+require_once __DIR__ .'/classes/products.php';
+require_once __DIR__ .'/classes/dogs.php';
+require_once __DIR__ .'/classes/cats.php';
+require_once __DIR__ .'/classes/byProoductsDogs.php';
+require_once __DIR__ .'/classes/by-products-cats.php';
+var_dump($products)
+
+
 ?>
 
 
@@ -17,7 +20,9 @@ require_once __DIR__ .'/classes/by-products-cats.php'
 <body>
     <header>
         <div>
-            
+            <h1>
+                <?php echo toString($products) ?> 
+            </h1>
         </div>
     </header>
 </body>
