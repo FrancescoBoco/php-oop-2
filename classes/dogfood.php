@@ -12,6 +12,7 @@ class DogFood  extends Products{
         $descrizione,
         $immagine,
         $categoria,
+        $prezzo,
         $ingredients,
         $weight
     )
@@ -21,6 +22,7 @@ class DogFood  extends Products{
             $descrizione,
             $immagine,
             $categoria,
+            $prezzo,
             
         );
         $this->ingredients = $ingredients;

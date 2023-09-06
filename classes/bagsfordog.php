@@ -12,6 +12,7 @@ class BagsForDogs  extends  DogFood{
         $descrizione,
         $immagine,
         $categoria,
+        $prezzo,
         $ingredients,
         $weight,
         $size,
@@ -24,6 +25,7 @@ class BagsForDogs  extends  DogFood{
             $descrizione,
             $immagine,
             $categoria,
+            $prezzo,
             $ingredients,
             $weight
         );
